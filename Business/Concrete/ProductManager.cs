@@ -37,7 +37,7 @@ namespace Business.Concrete
         {
             //is kodları
             //Yetkisi var mı?
-            if (DateTime.Now.Hour==22)//saat 22 den sonra sistem kapalı
+            if (DateTime.Now.Hour == 22)//saat 22 den sonra sistem kapalı
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
